@@ -66,6 +66,7 @@ h1{
     gap: 10px;
 }
 
+
 .menu-open {
     display: flex; /* It shows the menu when the button is clicked */
 }
@@ -90,7 +91,7 @@ ul{
 }
 
 figure img{
-    margin-top: 15px;
+    margin-top: 20px;
     width: 250px;
     height: auto;
 }
@@ -113,6 +114,7 @@ section{
 }
 
 .certificate{
+    margin-top: -15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
@@ -134,6 +136,26 @@ section{
     color: white;
     background-color: black;
     font-size: 15px;
+    cursor: pointer;
+}
+
+.categories{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.courses{
+    margin-top: 15px;
+    grid-column: 1/4;
+    display: grid;
+    gap: 15px;
+}
+
+.courses section{
+    border-radius: 5px;
+    color: whi;
 }
 
 footer{

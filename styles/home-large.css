@@ -1,0 +1,91 @@
+@media screen and (min-width: 1000px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    header{
+       justify-content: center;
+    }
+
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: black;
+    }
+
+    .navigation a{
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+    }
+
+    .navigation a:hover{
+        text-decoration: underline;
+        color: white;
+    }
+
+    .menu-toggle{
+        display: none;
+    }
+
+    main{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        flex: 1;
+    }
+
+    .course{
+        margin-top: 20px;
+        grid-column: 1/4;
+    }
+
+    .placeInfo{
+        margin-top: 20px;
+        grid-column: 4/5;
+    }
+
+    .certificate{
+        margin-top: 20px;
+        grid-column: 1/5;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .categories{
+        grid-column: 1/4;
+        display: flex;
+        justify-content: center;
+    }
+
+    section{
+        box-shadow: 5px 5px 5px rgba(75, 73, 73, 0.356);
+        border-radius: 5px;
+    }
+
+
+    .all, .cse, .wdd{
+        padding: 8px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+
+
+    .courses{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    footer{
+        padding: 30px;
+    }
+}
