@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: rgba(80, 8, 163, 0.616);
+}
+
+
+.profile{
+    width: 80px;
+    height: auto;
+}
+
+
+h1{
+    font-size: 26px;
+    color: white;
+    font-weight: 400;
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 25px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: rgb(0, 0, 0); 
+    cursor: pointer;
+    align-self: flex-end; 
+    width: 20px;
+   
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+.menu-toggle.active {
+    color: transparent; 
+}
+
+.menu-toggle.active::before {
+    content: '✖'; 
+    color: rgb(0, 0, 0); 
+    font-size: 24px; 
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;
+}
+
+.menu-open {
+    display: flex; /* It shows the menu when the button is clicked */
+}
+
+main{
+   margin: auto;
+   display: grid;
+   grid-template-columns: 1fr;
+   text-align: center;
+}
+
+h2{
+    background-color: rgba(80, 8, 163, 0.616);
+    font-weight: 500;
+    font-size: 25px;
+}
+
+ul{
+    margin-left: 30px;
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+figure img{
+    margin-top: 15px;
+    width: 250px;
+    height: auto;
+}
+
+figcaption{
+    font-style: italic;
+    color: gray;
+}
+
+section{
+    padding: 15px;
+}
+
+.course h2, .placeInfo h2{
+    margin-top: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 8px;
+    color: white;
+}
+
+.certificate{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.web{
+    margin-top: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 8px;
+    color: white;
+    grid-column: 1/4;
+}
+
+.all, .cse, .wdd{
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(80, 8, 163, 0.616);
+    padding: 30px;
+}
+
+
+
+
