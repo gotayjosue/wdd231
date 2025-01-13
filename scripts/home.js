@@ -97,11 +97,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
+const courseCredits = document.querySelector('#credits')
 const courseList = document.querySelector('#courses')
 
 const displayCourses = (courses) => {
     courseList.innerHTML = ''
+    courseCredits.innerHTML = ''
     courses.forEach(course => {
 
         const section = document.createElement('section')
@@ -114,7 +115,10 @@ const displayCourses = (courses) => {
             section.style.color = 'white'
         }
 
+        const totalCredits = courses.reduce((accumulator, course) => accumulator + course.credits, 0)
+    
         courseList.appendChild(section)
+        courseCredits.textContent = totalCredits
     });
 }
 

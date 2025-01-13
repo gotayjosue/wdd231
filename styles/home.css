@@ -20,6 +20,7 @@ header{
 .profile{
     width: 80px;
     height: auto;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.589);
 }
 
 
@@ -155,7 +156,12 @@ section{
 
 .courses section{
     border-radius: 5px;
-    color: whi;
+}
+
+.total, .credits{
+    margin-top: 30px;
+    text-align: center;
+    grid-column: 2;
 }
 
 footer{
