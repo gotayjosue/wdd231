@@ -40,7 +40,28 @@ header p{
 } 
 
 nav{
+    grid-column: 1/5;
+    grid-row: 4;
+    display: block;
+    text-align: center;
+    background-color: #cacbce;
     display: none;
+}
+
+nav a{
+    text-decoration: none;
+    line-height: 40px;
+    color: black;
+}
+
+nav.open{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#menuButton.open{
+    content: "x";
 }
 
 .hero picture img{
@@ -72,6 +93,7 @@ main{
     background-color: #cacbce;
     padding: 0rem 0rem 1rem 0rem;
     margin-top: 30px;
+    width: 330px;
 }
 
 .currentWeather h3{
@@ -102,6 +124,7 @@ main{
 .weatherForecast{
     background-color: #cacbce;
     padding-bottom: 1rem;
+    width: 330px;
 }
 
 .weatherForecast h3{
@@ -136,6 +159,7 @@ main{
     padding: 0px 20px 20px 20px;
     grid-gap: 2px;
     border-radius: 5px;
+    width: 330px;
 }
 
 #members h3{

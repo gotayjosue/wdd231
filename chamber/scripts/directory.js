@@ -2,6 +2,15 @@ const year = new Date().getFullYear()
 const lastModified = document.querySelector('#modificationDate').textContent = `Last Modification: ${document.lastModified}`
 const name = document.querySelector('#name').textContent = `\u00A9 ${year} Trujillo Chamber of Commerce`;
 
+const menuButton = document.querySelector('#menuButton')
+const navBar = document.querySelector('#navigation')
+
+menuButton.addEventListener('click', () =>{
+
+    navBar.classList.toggle('open')
+    menuButton.classList.toggle('open')
+})
+
 const membersContainer = document.querySelector('#members');
 
 let membersList = [];
