@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
@@ -68,6 +72,7 @@ nav.open{
     content: "x";
 }
 
+
 .hero picture img{
     width: 100%;
     height: 400px;
@@ -78,14 +83,6 @@ main{
     margin: 0 auto;
 }
 
-.home{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    justify-items: center;
-    grid-gap: 15px;
-
-}
-
 .home section{
     margin-top: 15px;
 }
@@ -94,7 +91,6 @@ main{
     background-color: #cacbce;
     padding-bottom: 10rem;
     width: 100%;
-    grid-column: 1/3;
 }
 
 .events h3{
@@ -159,7 +155,6 @@ main{
 }
 
 #members{
-    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin-top: 20px;
@@ -181,7 +176,7 @@ main{
     padding: 0px 20px 20px 20px;
     grid-gap: 2px;
     border-radius: 5px;
-    width: 320px;
+    width: 100%;
 }
 
 #members h3{
@@ -218,6 +213,13 @@ footer{
     margin-top: 20px;
     color: white;
     text-align: left;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+}
+
+.contact{
+    margin-right: 60px;
 }
 
 footer img{
@@ -233,3 +235,7 @@ footer img{
     justify-items: center;
 }
 
+@media screen and (min-width: 550px){
+
+
+}
