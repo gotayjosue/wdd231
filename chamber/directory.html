@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-large.css">
     <script src="scripts/directory.js" defer></script>
@@ -16,30 +17,74 @@
 <body>
 
     <header>
-        <img src="images/logo.webp" alt="Logo" height="100" width="auto">
+        <img class="logo" src="images/logo.webp" alt="Logo" height="100" width="auto">
         <h3>Trujillo</h3>
         <p>Chamber of Commerce</p>
+      
         <nav>
             <a href="directory.html">Home</a>
             <a href="#">Directory</a>
             <a href="#">Join</a>
             <a href="#">Discover</a>
         </nav>
-        <img src="images/light-mode.webp" height="50" width="auto" alt="Light mode to dark mode icon">
-        <button id="menuButton">&#9776;</button>
-    </header>
 
+        <img class="light-mode" src="images/light-mode.webp" height="50" width="auto" alt="Light mode to dark mode icon">
+        <button id="menuButton">&#9776;</button>
+        
+    </header>
+    <div class="hero">
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/hero-image-wide.webp">
+            <source media="(min-width: 550px)" srcset="images/hero-image-medium.webp">
+            <img src="images/hero-image-small.webp" alt="Commerce image" width="500" height="667">
+        </picture>
+    </div>
     <main>
-        <div class="hero">
-            <picture>
-                <source media="(min-width: 1000px)" srcset="images/hero-image-wide.webp">
-                <source media="(min-width: 550px)" srcset="images/hero-image-medium.webp">
-                <img src="images/hero-image-small.webp" alt="Trujillo park" width="500" height="667">
-            </picture>
+        <div class="home">
+            <section class="events">
+                <h3>Events</h3>
+            </section>
+
+            <section class="currentWeather">
+                <h3>Current Weather</h3>
+                <img src="images/sunny.png" alt="Sunny day icon">
+                <p><strong>80º </strong>F</p>
+                <p>Sunny</p>
+                <p>High: 85º</p>
+                <p>Low: 66º</p>
+                <p>Humidity: 55%</p>
+                <p>Sunrise: 6:00am</p>
+                <p>Sunset: 6:00pm</p>
+               
+
+            </section>
+
+            <section class="weatherForecast">
+                <h3>Weather Forecast</h3>
+                <p>Today: <strong>80ºF</strong></p>
+                <p>Wednesday: <strong>85ºF</strong></p>
+                <p>Thursday: <strong>75ºF</strong></p>
+            </section>
+        </div>
+
+        <div class="members"></div>
     </main>
 
     <footer>
-
+        <strong>Trujillo Chamber of Commerce</strong>
+        <p>10 Ave Trujillo Center</p>
+        <p>Trujillo, Colón 32101</p>
+        <p>info@trujilloserv.org</p>
+        <p>+504 3335-9229</p>
+        <div class="social-media">
+            <img src="images/facebook-logo.webp" alt="facebook icon">
+            <img src="images/linkedin-logo.webp" alt="linkedIn icon">
+            <img src="images/instagram-logo.webp" alt="instagram icon">
+        </div>
+        <p>WDD 231 Class Project</p>
+        <p>Josué Gotay</p>
+        <p id="name"></p>
+        <p id="modificationDate"></p>
     </footer>
     
 </body>
