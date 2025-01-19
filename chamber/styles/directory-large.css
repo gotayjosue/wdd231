@@ -1,0 +1,45 @@
+@media screen and (min-width: 1000px){
+
+    main{
+        display: grid;
+    }
+
+    nav{
+        display: flex;
+        gap: 40px;
+        justify-content: flex-end;
+        grid-column: 3;
+        grid-row: 1;
+        background: none;
+        padding-right: 15px;
+    }
+
+    #menuButton{
+        display: none;
+    }
+
+    /* .home{
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+
+    }
+
+    .currentWeather{
+        grid-column: 2;
+    }
+
+    .weatherForecast{
+        grid-column: 3;
+    }
+
+    #members{
+        grid-row: 2;
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    } */
+
+}
