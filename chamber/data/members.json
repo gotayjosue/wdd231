@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Trujillo Hardward Store",
+        "bussinesTag": "Construction Materials",
+        "address": "June 18th street, Trujillo, Colón",
+        "phone": "9853-6500",
+        "website": "trujilloferre.org",
+        "imageUrl": "https://res.cloudinary.com/dhu9pmzqp/image/upload/v1737269353/ferreteriaTrujillo_fajp4w.webp",
+        "membershipLevel": "1"
+    },
+    {
+        "name": "Agro Palma",
+        "bussinesTag": "Agricultural Company",
+        "address": "Aguan Boulevard",
+        "phone": "9912-3513",
+        "website": "agropalma.com",
+        "imageUrl": "https://res.cloudinary.com/dhu9pmzqp/image/upload/v1737269353/agropalma_fu2amy.webp",
+        "membershipLevel": "3"
+    },
+    {
+        "name": "Aceidesa",
+        "bussinesTag": "Royal Palm Industry",
+        "address": "Yellow Water Boulevard",
+        "phone": "8825-9310",
+        "website": "aceidesa.com",
+        "imageUrl": "https://res.cloudinary.com/dhu9pmzqp/image/upload/v1737269353/aceydesa_pnipy1.webp",
+        "membershipLevel": "3"
+    },
+    {
+        "name": "Carmen Supermarket",
+        "bussinesTag": "Supermarket",
+        "address": "Trujillo Center Ward",
+        "phone": "8826-5510",
+        "website": "carmenmarket.com",
+        "imageUrl": "https://res.cloudinary.com/dhu9pmzqp/image/upload/v1737269354/elCarmenSuperMarket_qyycfo.webp",
+        "membershipLevel": "2"
+    },
+    {
+        "name": "Loredo Metal Industries and Lattices",
+        "bussinesTag": "A Metal Products Company",
+        "address": "Trujillo Center Ward",
+        "phone": "9466-2288",
+        "website": "loredometal.com",
+        "imageUrl": "https://res.cloudinary.com/dhu9pmzqp/image/upload/v1737269353/celosiasLoredo_iuqpwu.webp",
+        "membershipLevel": "1"
+    },
+    {
+        "name": "Daris Bazaar",
+        "bussinesTag": "A Store that offers a Variety of Retail Products",
+        "address": "Trujillo Limonal Ward",
+        "phone": "9523-2272",
+        "website": "darisbazarstore.com",
+        "imageUrl": "https://res.cloudinary.com/dhu9pmzqp/image/upload/v1737269353/bazarDaris_wdnnlm.webp",
+        "membershipLevel": "2"
+    },
+    {
+        "name": "Yanma Electrics",
+        "bussinesTag": "Hardware Store",
+        "address": "Jerico Ward",
+        "phone": "9999-0207",
+        "website": "yanelectric.com",
+        "imageUrl": "https://res.cloudinary.com/dhu9pmzqp/image/upload/v1737269357/yanmaElectrics_elsjjg.webp",
+        "membershipLevel": "3"
+    }
+]
