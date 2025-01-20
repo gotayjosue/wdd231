@@ -17,7 +17,7 @@
 
     .home{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
         grid-gap: 20px;
 
     }
@@ -28,6 +28,10 @@
 
     .currentWeather{
         grid-column: 2;
+    }
+
+    .currentWeather p{
+        font-size: 17px;
     }
 
     .weatherForecast{
