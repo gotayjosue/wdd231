@@ -46,7 +46,8 @@ header p{
 nav{
     grid-column: 1/5;
     grid-row: 4;
-    display: block;
+    display: grid;
+    grid-template-rows: 0fr;
     text-align: center;
     background-color: #cacbce;
     display: none;
@@ -67,8 +68,11 @@ nav.open{
     flex-direction: column;
 }
 
+#menuButton::before{
+    content: "\2630";
+  }
 
-#menuButton.open{
+#menuButton.open::before{
     content: "x";
 }
 
@@ -172,6 +176,7 @@ main{
 #members.list {
 	display: flex;
 	flex-direction: column;
+    gap: 0px;
 }
 
 #members.list section{
@@ -183,6 +188,16 @@ main{
     justify-items: center;
     align-items: center;
     grid-gap: 15px;
+    border-top: solid black 1px;
+    border-radius: 0px;
+}
+
+#members.list section:nth-child(even){
+    background-color: #df82a06e;
+}
+
+#members.list section:last-child{
+    border-bottom: solid black 1px;
 }
 
 #members.list section img{

@@ -9,6 +9,7 @@
         grid-row: 1;
         background: none;
         padding-right: 15px;
+        grid-template-rows: 1fr;
     }
 
     #menuButton{

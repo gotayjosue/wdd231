@@ -11,6 +11,14 @@ menuButton.addEventListener('click', () =>{
     menuButton.classList.toggle('open')
 })
 
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) { //Everytime the page gets bigger the class 'open' will be take out of the navBar and the menuButton//
+        navBar.classList.remove('open');
+        menuButton.classList.remove('open')
+    }
+});
+
 const membersContainer = document.querySelector('#members');
 
 let membersList = [];
