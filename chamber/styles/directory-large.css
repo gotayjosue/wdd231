@@ -17,6 +17,10 @@
         display: none;
     }
 
+    .hero picture img{
+        box-shadow: none;
+    }
+
     .home{
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;

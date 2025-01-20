@@ -19,6 +19,7 @@ window.addEventListener('resize', () => {
     }
 });
 
+//Getting bussines info from the json file//
 const membersContainer = document.querySelector('#members');
 
 let membersList = [];
@@ -68,6 +69,7 @@ function displayMembers(members){
 
 getMembers()
 
+//Grid or list style//
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("#members");
