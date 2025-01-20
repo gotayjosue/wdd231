@@ -38,5 +38,20 @@
         grid-column: 3;
     }
 
+    #members.list section h3{
+        font-size: 20px;
+    }
+    
+    #members.list section .tag{
+        font-size: 20px;
+    }
+    
+    #members.list section .phone{
+        font-size: 18px;
+    }
+    
+    #members.list section .site{
+        font-size: 18px;
+    }
 
 }
