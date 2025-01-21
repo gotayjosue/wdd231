@@ -85,3 +85,11 @@ function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
 }
+
+const modeButton = document.querySelector('.light-mode')
+
+modeButton.addEventListener('click', () =>{
+
+    document.body.classList.toggle('black')
+
+});

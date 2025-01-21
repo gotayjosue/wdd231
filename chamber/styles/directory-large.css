@@ -5,13 +5,17 @@
         display: flex;
         gap: 40px;
         justify-content: flex-end;
-        grid-column: 3;
+        grid-column:3;
         grid-row: 1;
         background: none;
         padding-right: 15px;
         grid-template-rows: 1fr;
+        background-color: none;
     }
 
+    body.black header nav{
+        background-color: rgba(0, 0, 0, 0);
+    }
 
     #menuButton{
         display: none;
