@@ -32,7 +32,7 @@ const aCourse = {
       }
     },
     init: function (){
-        setCourseInfo(this.sections)
+        setCourseInfo(this)
         renderSections(this.sections)
     }
   };

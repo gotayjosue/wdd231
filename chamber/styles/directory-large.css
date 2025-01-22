@@ -21,8 +21,10 @@
         display: none;
     }
 
+
     .hero picture img{
         box-shadow: none;
+        padding: 0px 30px 0px 30px;
     }
 
     .home{
