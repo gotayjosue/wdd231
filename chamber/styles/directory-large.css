@@ -27,7 +27,7 @@
         padding: 0px 30px 0px 30px;
     }
 
-    .home{
+    /* .home{
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         grid-gap: 20px;
@@ -48,7 +48,7 @@
 
     .weatherForecast{
         grid-column: 3;
-    }
+    } */
 
     #members.list section h3{
         font-size: 20px;

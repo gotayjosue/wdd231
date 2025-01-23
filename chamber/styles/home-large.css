@@ -11,6 +11,10 @@
         padding-right: 15px;
         grid-template-rows: 1fr;
         background-color: none;
+        max-height: 300px;
+        opacity: 1; /* Totalmente visible */
+        overflow: visible;
+        max-height: none;
     }
 
     body.black header nav{
