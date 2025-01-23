@@ -97,7 +97,10 @@ nav{
     grid-template-rows: 0fr;
     text-align: center;
     background-color: #cacbce;
-    display: none;
+    max-height: 0; /* Nav is hidden */
+    overflow: hidden; /* It covers the content when the nav is closed */
+    transition: max-height 0.5s ease, opacity 0.7s ease; /* Animation */
+    opacity: 0; /* It starts completely transparent */
 }
 
 nav a{
@@ -113,6 +116,8 @@ nav a:hover{
 nav.open{
     display: flex;
     flex-direction: column;
+    max-height: 300px; /* Ajusta según el contenido máximo del menú */
+    opacity: 1; /* Totalmente visible */
 }
 
 #menuButton::before{
