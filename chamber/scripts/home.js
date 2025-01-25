@@ -135,6 +135,11 @@ async function apiFetch() {
 }
 apiFetch()
 
+function formatTime(date){
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+    return(`${hours}:${minutes}`)
+}
 
 
 function displayResults(data){
@@ -144,11 +149,7 @@ function displayResults(data){
     const sunriseHour = new Date(sunriseTimestamp * 1000)
     const sunsetHour = new Date(sunsetTimestamp * 1000)
 
-    function formatTime(date){
-        const hours = date.getHours().toString().padStart(2, '0');
-        const minutes = date.getMinutes().toString().padStart(2, '0');
-        return(`${hours}:${minutes}`)
-    }
+
 
     temperature.innerHTML = `<strong>${data.main.temp}</strong> ºC`
     const iconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
@@ -206,7 +207,7 @@ function displayForecastResults(forecastData){
     }
 
 
-    day1.innerHTML = `<strong>${dayNames(dayOneName)}:</strong> ${forecastData.list[0].main.temp}`
-    day2.innerHTML = `<strong>${dayNames(dayTwoName)}:</strong> ${forecastData.list[1].main.temp}`
-    day3.innerHTML = `<strong>${dayNames(dayThreeName)}:</strong> ${forecastData.list[2].main.temp}`
+    day1.innerHTML = `<strong>${dayNames(dayOneName)} ${formatTime(dayOneName)}:</strong> ${forecastData.list[0].main.temp}ºC`
+    day2.innerHTML = `<strong>${dayNames(dayTwoName)} ${formatTime(dayTwoName)}:</strong> ${forecastData.list[1].main.temp}ºC`
+    day3.innerHTML = `<strong>${dayNames(dayThreeName)} ${formatTime(dayThreeName)}:</strong> ${forecastData.list[2].main.temp}ºC`
 }
