@@ -56,4 +56,11 @@ const aCourse = {
     document.querySelector("#sections").innerHTML = html.join("");
   }
 
+    // moduleA.js file
+  const message = "Hello, world!";
+  function greet() { 
+  console.log(message);
+}
+
   export default aCourse;
+

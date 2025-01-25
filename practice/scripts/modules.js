@@ -1,6 +1,6 @@
 import aCourse from "./Course.mjs";
 
-//modules.js
+modules.js
   
   document.querySelector("#enrollStudent").addEventListener("click", function () {
     const sectionNum = document.querySelector("#sectionNumber").value;
