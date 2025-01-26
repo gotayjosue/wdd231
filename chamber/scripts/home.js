@@ -136,9 +136,15 @@ async function apiFetch() {
 apiFetch()
 
 function formatTime(date){
-    const hours = date.getHours().toString().padStart(2, '0');
-    const minutes = date.getMinutes().toString().padStart(2, '0');
-    return(`${hours}:${minutes}`)
+    let hours = date.getHours()
+    let minutes = date.getMinutes()
+
+    hours = hours % 12
+    hours = hours ? hours : 12;
+    let ampm = hours > 12 ? 'PM' : 'AM'
+    minutes = minutes < 10 ? '0' + minutes : minutes
+
+    return hours + ':' + minutes + ' ' + ampm;
 }
 
 
