@@ -170,7 +170,7 @@ function displayResults(data){
 const day1 = document.querySelector('#day1')
 const day2 = document.querySelector('#day2')
 const day3 = document.querySelector('#day3')
-const forecast= 'https://api.openweathermap.org/data/2.5/forecast?lat=15.911461095971282&lon=-85.9523698285993&cnt=3&appid=21f41c4766fe59c0c40d3a7fb615b230&units=metric'
+const forecast= 'https://api.openweathermap.org/data/2.5/forecast?lat=15.911461095971282&lon=-85.9523698285993&cnt=24&appid=21f41c4766fe59c0c40d3a7fb615b230&units=metric'
 
 
 async function apiForecastFetch() {
@@ -195,8 +195,8 @@ apiForecastFetch()
 
 function displayForecastResults(forecastData){
     const dayOneTimestamp = forecastData.list[0].dt
-    const dayTwoTimestamp = forecastData.list[1].dt
-    const dayThreeTimestamp = forecastData.list[2].dt
+    const dayTwoTimestamp = forecastData.list[10].dt
+    const dayThreeTimestamp = forecastData.list[22].dt
 
     const dayOneName = new Date(dayOneTimestamp * 1000)
     const dayTwoName = new Date(dayTwoTimestamp * 1000)
