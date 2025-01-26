@@ -110,7 +110,7 @@ const low = document.querySelector('#low')
 const humidity = document.querySelector('#humidity')
 const sunrise = document.querySelector('#sunrise')
 const sunset = document.querySelector('#sunset')
-const icon = document.querySelector('#weatherIcon')
+const weatherContainer = document.querySelector('.currentWeather')
 
 const url= 'https://api.openweathermap.org/data/2.5/weather?lat=15.911461095971282&lon=-85.9523698285993&appid=21f41c4766fe59c0c40d3a7fb615b230&units=metric'
 
@@ -153,8 +153,10 @@ function displayResults(data){
 
     temperature.innerHTML = `<strong>${data.main.temp}</strong> ºC`
     const iconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    const icon = document.createElement('img')
     icon.setAttribute('src', iconUrl)
     icon.setAttribute('alt', data.weather[0].description)
+    weatherContainer.appendChild(icon)
     const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
     description.textContent = capitalize(data.weather[0].description)
     humidity.innerHTML = `<strong>Humidity:</strong> ${data.main.humidity}`
