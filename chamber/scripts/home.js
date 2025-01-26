@@ -19,6 +19,8 @@ window.addEventListener('resize', () => {
     }
 });
 
+
+//Black mode button function
 const modeButton = document.querySelector('.light-mode')
 
 modeButton.addEventListener('click', () =>{
