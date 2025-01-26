@@ -171,7 +171,7 @@ const day3 = document.querySelector('#day3')
 const forecast= 'https://api.openweathermap.org/data/2.5/forecast?lat=15.911461095971282&lon=-85.9523698285993&cnt=3&appid=21f41c4766fe59c0c40d3a7fb615b230&units=metric'
 
 
-async function apiForcastFetch() {
+async function apiForecastFetch() {
     
     try{
         const forecastResponse = await fetch(forecast);
@@ -189,16 +189,16 @@ async function apiForcastFetch() {
 
 
 }
-apiForcastFetch()
+apiForecastFetch()
 
 function displayForecastResults(forecastData){
-    dayOneTimestamp = forecastData.list[0].dt
-    dayTwoTimestamp = forecastData.list[1].dt
-    dayThreeTimestamp = forecastData.list[2].dt
+    const dayOneTimestamp = forecastData.list[0].dt
+    const dayTwoTimestamp = forecastData.list[1].dt
+    const dayThreeTimestamp = forecastData.list[2].dt
 
-    dayOneName = new Date(dayOneTimestamp * 1000)
-    dayTwoName = new Date(dayTwoTimestamp * 1000)
-    dayThreeName = new Date(dayThreeTimestamp * 1000)
+    const dayOneName = new Date(dayOneTimestamp * 1000)
+    const dayTwoName = new Date(dayTwoTimestamp * 1000)
+    const dayThreeName = new Date(dayThreeTimestamp * 1000)
 
     function dayNames(date){
         const daysOfWeek = [
