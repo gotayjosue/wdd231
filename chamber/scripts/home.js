@@ -155,12 +155,13 @@ function displayResults(data){
     const iconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     icon.setAttribute('src', iconUrl)
     icon.setAttribute('alt', data.weather[0].description)
-    description.textContent = data.weather[0].description
-    humidity.textContent = `Humidity: ${data.main.humidity}%`
-    high.textContent = `High ${data.main.temp_max} ºC`
-    low.textContent = `Low ${data.main.temp_min} ºC`
-    sunrise.textContent = `Sunrise: ${formatTime(sunriseHour)}`
-    sunset.textContent = `Sunset: ${formatTime(sunsetHour)}`
+    const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
+    description.textContent = capitalize(data.weather[0].description)
+    humidity.innerHTML = `<strong>Humidity:</strong> ${data.main.humidity}`
+    high.innerHTML = `<strong>High:</strong> ${data.main.temp_max} ºC`
+    low.innerHTML = `<strong>Low:</strong> ${data.main.temp_min} ºC`
+    sunrise.innerHTML = `<strong>Sunrise:</strong> ${formatTime(sunriseHour)}`
+    sunset.innerHTML = `<strong>Sunset:</strong> ${formatTime(sunsetHour)}`
 };
 
 //Forecast API implementation
