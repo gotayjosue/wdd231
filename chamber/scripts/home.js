@@ -140,11 +140,11 @@ function formatTime(date){
     let minutes = date.getMinutes()
 
     hours = hours % 12
-    hours = hours ? hours : 12;
+    hours = hours ? hours : 12
     let ampm = hours > 12 ? 'PM' : 'AM'
     minutes = minutes < 10 ? '0' + minutes : minutes
-
-    return hours + ':' + minutes + ' ' + ampm;
+    
+    return `${hours}:${minutes} ${ampm}`
 }
 
 
