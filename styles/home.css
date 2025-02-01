@@ -156,12 +156,41 @@ section{
 
 .courses section{
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .total, .credits{
     margin-top: 30px;
     text-align: center;
     grid-column: 2;
+}
+
+dialog{
+    margin: auto;
+    padding: 0px 0px 20px 0px;
+    border: none;
+    border-radius: 5px;
+}
+
+dialog h2{
+    padding: 10px;
+    color: white;
+}
+
+dialog h3, p{
+    margin-top: 10px;
+    text-align: left;
+    padding: 8px;
+    line-height: 22px;
+}
+
+dialog button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
 }
 
 footer{

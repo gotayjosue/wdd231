@@ -86,6 +86,7 @@ document.getElementById('currentyear').textContent = `${copyrightSymbol}${curren
 document.getElementById('name').textContent = `Josué Gotay `;
 document.getElementById('country').textContent = `Honduras`;
 document.getElementById('lastModified').textContent = `Last modification ${document.lastModified}`;
+const modal = document.querySelector('#modal')
 
 document.addEventListener("DOMContentLoaded", function() {
     const menuToggle = document.querySelector(".menu-toggle");
@@ -119,6 +120,11 @@ const displayCourses = (courses) => {
     
         courseList.appendChild(section)
         courseCredits.textContent = totalCredits
+
+
+        section.addEventListener('click', () =>{
+            displayCourseDetails(course)
+        })
     });
 }
 
@@ -148,3 +154,25 @@ all.addEventListener('click', function(){
     event.preventDefault()
     const allCourses = displayCourses(courses)
 })
+
+
+function displayCourseDetails (course){
+ 
+    modal.innerHTML = ''
+    modal.innerHTML = `
+    <h2>${course.subject} ${course.number}<button id="closeModal">❌</button></h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}
+    <p><strong>Certificate</strong>: ${course.certificate}
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    modal.showModal()
+
+    closeModal.addEventListener('click', () =>{
+        modal.close()
+    })
+}
+
+
+
