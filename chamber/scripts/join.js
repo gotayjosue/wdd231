@@ -29,6 +29,13 @@ modeButton.addEventListener('click', () =>{
 
 });
 
+//Saving the timestamp information
+const timestamp = document.querySelector('#timestamp')
+
+timestamp.value = `${new Date().toLocaleDateString()} - ${new Date().toLocaleTimeString()}`
+
+
+
 //Selecting modal elements
 const nonProfitButton = document.querySelector('#nonButton')
 const bronzeButton = document.querySelector('#bronzeButton')
