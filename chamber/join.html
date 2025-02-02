@@ -46,7 +46,7 @@
             
             <label>Last name*<input type="text" required name="last" title="Your last name" autocomplete="family-name"></label>
             
-            <label>Organizational title*<input type="text" name="organizational" title="Your organizational title" autocomplete="organization-title"></label>
+            <label>Organizational title*<input type="text" required name="organizational" title="Your organizational title. Please enter at least seven characters using only letters, hyphens, and spaces." autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"></label>
             
             <label>E-mail address*<input type="email" required name="email" title="Your email address" autocomplete="email" placeholder="example@gamail.com"></label>
             
