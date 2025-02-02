@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Trujillo Chamber of Commerce</title>
+    <meta property="og:title" content="Trujillo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://res.cloudinary.com/dhu9pmzqp/image/upload/v1737349423/hero-image-medium_eguvqf.webp">
+    <meta property="og:url" content="https://gotayjosue.github.io/wdd231/chamber/join.html">
+    <meta name="author" content="Josué Hernández Gotay">
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Josué Hernández Gotay">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.webp" alt="Logo" height="100" width="130">
+        <h3>Trujillo</h3>
+        <p>Chamber of Commerce</p>
+      
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+
+        <img class="light-mode" src="images/light-mode.webp" height="50" width="50" alt="Light mode to dark mode icon">
+        <button id="menuButton"></button>
+        
+    </header>
+
+    <main>
+        <form class="f1" action="thanks.html" method="get">
+            <div class="imageContainer">
+                <img class="formLogo" src="images/logo.webp" alt="Ocaso logo">
+            </div>  
+            <h2>Send your work to us</h2>
+            <p>Send to us images you have shooted and our team will review them to add them to our platform</p>
+            <label>First name*<input type="text" required name="first" title="Your first name" autocomplete="given-name"></label>
+            
+            <label>Last name*<input type="text" required name="last" title="Your last name" autocomplete="family-name"></label>
+            
+            <label>Organizational title*<input type="text" name="organizational" title="Your organizational title" autocomplete="organization-title"></label>
+            
+            <label>E-mail address*<input type="email" required name="email" title="Your email address" autocomplete="email" placeholder="example@gamail.com"></label>
+            
+            <label>Phone number*<input type="tel" required name="phone" title="Your phone number" autocomplete="tel"></label>
+            
+            <label>Business/Organization's name<input type="text" required name="organization" title="Your organization's name" autocomplete="organization"></label>
+            
+            <label>Membership level
+                <select name="membership" id="membershipLevel">
+                    <option value="default" disabled selected>Select a membership</option>
+                    <option value="">NP Membership</option>
+                    <option value="">Zronze Membership</option>
+                    <option value="">Silver Membership</option>
+                    <option value="">Gold Membership</option>
+                </select>
+            </label>
+            <input type="hidden" name="time" id="timestamp">
+            <div class="buttonContainer">
+                <button type="submit">Apply for membership</button>
+            </div>
+        </form>
+        <h2>Membership Levels</h2>
+        <div class="memberships">
+            <div>
+                <h3>Non Profit Membership Level</h3>
+                <button>Learn More</button>
+                <dialog></dialog>
+            </div>
+            <div>
+                <h3>Bronze Membership Level</h3>
+                <button>Learn More</button>
+                <dialog></dialog>
+            </div>
+            <div>
+                <h3>Silver Membership Level</h3>
+                <button>Learn More</button>
+                <dialog></dialog>
+            </div>
+            <div>
+                <h3>Gold Membership Level</h3>
+                <button>Learn More</button>
+                <dialog></dialog>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <strong>Trujillo Chamber of Commerce</strong>
+            <p>10 Ave Trujillo Center</p>
+            <p>Trujillo, Colón 32101</p>
+            <p>info@trujilloserv.org</p>
+            <p>+504 3335-9229</p>
+        </div>
+        <div class="social-media">
+            <img src="images/facebook-logo.webp" alt="facebook icon">
+            <img src="images/linkedin-logo.webp" alt="linkedIn icon">
+            <img src="images/instagram-logo.webp" alt="instagram icon">
+        </div>
+        <div class="project">
+            <p>WDD 231 Class Project</p>
+            <p>Josué Gotay</p>
+            <p id="name"></p>
+            <p id="modificationDate"></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
