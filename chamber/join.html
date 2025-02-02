@@ -42,8 +42,6 @@
             <div class="imageContainer">
                 <img class="formLogo" src="images/logo.webp" alt="Ocaso logo">
             </div>  
-            <h2>Send your work to us</h2>
-            <p>Send to us images you have shooted and our team will review them to add them to our platform</p>
             <label>First name*<input type="text" required name="first" title="Your first name" autocomplete="given-name"></label>
             
             <label>Last name*<input type="text" required name="last" title="Your last name" autocomplete="family-name"></label>
@@ -60,7 +58,7 @@
                 <select name="membership" id="membershipLevel">
                     <option value="default" disabled selected>Select a membership</option>
                     <option value="">NP Membership</option>
-                    <option value="">Zronze Membership</option>
+                    <option value="">Bronze Membership</option>
                     <option value="">Silver Membership</option>
                     <option value="">Gold Membership</option>
                 </select>
@@ -70,27 +68,68 @@
                 <button type="submit">Apply for membership</button>
             </div>
         </form>
-        <h2>Membership Levels</h2>
+        
         <div class="memberships">
+            <h2>Membership Levels</h2>
             <div>
                 <h3>Non Profit Membership Level</h3>
-                <button>Learn More</button>
-                <dialog></dialog>
+                <button id="nonButton">Learn More</button>
+                <dialog id="nonModal">
+                    <button id="noneCloseButton">❌</button>
+                    <h4>Perfect for organizations dedicated to making a difference</h4>
+                    <p>This free or low-cost membership is designed for non-profits looking to connect with a broader audience. Benefits include:</p>
+                    <ul>
+                        <li>✅ Access to exclusive community events</li>
+                        <li>✅ Basic promotional opportunities</li>
+                        <li>✅ Discounts on select training sessions</li>
+                    </ul>
+                </dialog>
             </div>
             <div>
                 <h3>Bronze Membership Level</h3>
-                <button>Learn More</button>
-                <dialog></dialog>
+                <button id="bronzeButton">Learn More</button>
+                <dialog id="bronzeModal">
+                    <button id="bronzeCloseButton">❌</button>
+                    <h4>A great starting point for growing businesses</h4>
+                    <p>Gain visibility and access valuable resources to help your business thrive. Benefits include:</p>
+                    <ul>
+                        <li>⭐ All the benefits of the "Non Profit" membership</li>
+                        <li>⭐ Featured listing in the member directory</li>
+                        <li>⭐ Invitations to networking events</li>
+                        <li>⭐ Exclusive member discounts on events and training</li>
+                    </ul>
+                </dialog>
             </div>
             <div>
                 <h3>Silver Membership Level</h3>
-                <button>Learn More</button>
-                <dialog></dialog>
+                <button id="silverButton">Learn More</button>
+                <dialog id="silverModal">
+                    <button id="silverCloseButton">❌</button>
+                    <h4>Enhanced exposure and business growth opportunities</h4>
+                    <p>Take your business to the next level with premium benefits that increase visibility and engagement. Benefits include:</p>
+                    <ul>
+                        <li>🚀 All the benefits of the "Non Profit" and "Bronze" membership</li>
+                        <li>🚀 Spotlight positions on the home page</li>
+                        <li>🚀 Discounted advertising opportunities</li>
+                        <li>🚀 Priority access to special events and training</li>
+                    </ul>
+                </dialog>
             </div>
             <div>
                 <h3>Gold Membership Level</h3>
-                <button>Learn More</button>
-                <dialog></dialog>
+                <button id="goldButton">Learn More</button>
+                <dialog id="goldModal">
+                    <button id="goldCloseButton">❌</button>
+                    <h4>Maximum exposure and premium perks for top-tier businesses</h4>
+                    <p>Our most comprehensive membership offers unmatched benefits for those who want to stand out. Benefits include:</p>
+                    <ul>
+                        <li>🏆 All the benefits of the "Non Profit", "Bronze" and "Silver" membership</li>
+                        <li>🏆 Exclusive homepage spotlight placement</li>
+                        <li>🏆 Free or heavily discounted advertising packages</li>
+                        <li>🏆 VIP access to events and premium training sessions</li>
+                        <li>🏆 Personalized promotional support</li>
+                    </ul>
+                </dialog>
             </div>
         </div>
     </main>

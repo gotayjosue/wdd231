@@ -48,6 +48,12 @@ body.black main #members.list{
 body.black main #members.list section:nth-child(even){
     background-color: rgba(0, 0, 0, 0.726);
 }
+
+body.black .f1{
+    background-color: rgb(233, 233, 233);
+}
+
+
 /*Black mode features*/
 
 header{
@@ -145,13 +151,18 @@ main{
     border: 1px solid black;
     padding: 20px;
     border-radius: 16px;
+    width: 100%;
     max-width: 500px;
-    
+    margin-top: 50px;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
 }
 
 .formLogo{
-    width: 300px;
-    margin: 0 auto;
+    width: 200px;
 }
 
 .f1 label{
@@ -195,13 +206,14 @@ button[type = 'submit']{
     border: none;
     padding: .75rem;
     width: 50%;
-    background-color: #0965b0ad;
+    background-color: #2c7b93;
     color: white;
     font-size: 16px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
     transition: .8s;
+    cursor: pointer;
 }
 
 button[type = 'submit']:hover{
@@ -209,7 +221,55 @@ button[type = 'submit']:hover{
     transition: .8s;
 }
 
+h2{
+    text-align: center;
+    margin-top: 40px;
+}
 
+.memberships{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.memberships div{
+    background-color: #cacbce;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.memberships div button{
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+}
+
+dialog{
+    line-height: 30px;
+    border: none;
+}
+
+dialog button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    padding: 10px;
+}
+
+dialog p{
+    text-align: left;
+}
+
+dialog ul{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
 
 
 footer{
