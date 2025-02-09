@@ -135,8 +135,8 @@ p.colored {
   grid-column: 3/5;
   background-color: #ccc;
   padding: 16px;
-  width: 100px;
-  text-align: center;
+  width: 100%;
+  max-width: 60px;
 }
 .top {
   grid-area: top;
