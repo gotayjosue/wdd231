@@ -48,6 +48,7 @@ function displayPlaces(places){
         h2.textContent = place.name
         img.src = place.imageUrl
         img.alt = place.name
+        img.loading = "lazy"
         caption.textContent = place.name
         address.textContent = place.address
         p.textContent = place.description
