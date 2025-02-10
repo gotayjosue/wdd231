@@ -37,17 +37,6 @@ body.black header .light-mode{
     filter: invert(1);
 }
 
-body.black main h2{
-    color: white;
-}
-
-body.black main #members.list{
-    color: white;
-}
-
-body.black main #members.list section:nth-child(even){
-    background-color: rgba(0, 0, 0, 0.726);
-}
 /*Black mode features*/
 
 header{
@@ -136,6 +125,39 @@ nav.open{
 }
 
 
+.visitMessage{
+    margin-top: 40px;
+    justify-self: center;
+    background-color: #cacbce;
+    width: 100%;
+    max-width: fit-content;
+    padding: 20px;
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.486);
+    animation: slideUp 1s ease-out;
+
+}
+
+@keyframes slideUp{
+
+    0%{
+        transform: translatey(100%);
+        opacity: 0;
+    }
+
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.closeButton{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
 .cards{
     padding: 20px;
     margin-top: 60px;
@@ -146,6 +168,7 @@ nav.open{
 }
 
 .cards div{
+    animation: slideUp 1.5s ease alternate;
     background-color: #cacbce;
     padding: 30px;
     width: 100%;

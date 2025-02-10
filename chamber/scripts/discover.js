@@ -68,3 +68,40 @@ function displayPlaces(places){
 
 displayPlaces(places)
 
+//Last visit function
+document.addEventListener('DOMContentLoaded', () => {
+
+    const messageContainer = document.querySelector('.visitMessage')
+    const lastVisit = localStorage.getItem('lastVisit')
+    const currentTime = Date.now()
+
+    if (!lastVisit) {
+        messageContainer.textContent = 'Welcome! Let us know if you have any questions.'
+    }else{
+        const timeDifference = currentTime - parseInt(lastVisit)
+        const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24))//Convert ms to days
+    
+
+    if (daysDifference < 1){
+        messageContainer.textContent = 'Back so soon! Awesome!'
+    }else{
+        const daysText = daysDifference === 1 ? 'day' : 'days'
+        messageContainer.textContent = `You last visited ${daysDifference} ${daysText} ago.` 
+    }
+
+    }
+
+    localStorage.setItem('lastVisit', currentTime) //Save the actual date as the last visit
+    
+    const closeButton = document.createElement('button')
+    closeButton.textContent = '❌'
+    closeButton.className = 'closeButton'
+    messageContainer.appendChild(closeButton)
+
+    closeButton.addEventListener('click', () => {
+        messageContainer.style.display = 'none'
+    })
+
+})
+
+
