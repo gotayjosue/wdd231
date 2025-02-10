@@ -26,3 +26,45 @@ modeButton.addEventListener('click', () =>{
     document.body.classList.toggle('black')
 
 });
+
+const placesContainer = document.querySelector('.cards')
+
+import { places } from "../data/places.mjs";
+console.log(places)
+
+function displayPlaces(places){
+
+    places.forEach(place => {
+        
+        const div = document.createElement('div')
+        const h2 = document.createElement('h2')
+        const picture = document.createElement('picture')
+        const caption = document.createElement('figcaption')
+        const img = document.createElement('img')
+        const address = document.createElement('address')
+        const p = document.createElement('p')
+        const button = document.createElement('button')
+
+        h2.textContent = place.name
+        img.src = place.imageUrl
+        img.alt = place.name
+        caption.textContent = place.name
+        address.textContent = place.address
+        p.textContent = place.description
+        button.textContent = 'Learn more'
+
+        div.appendChild(h2)
+        div.appendChild(picture)
+        picture.appendChild(img)
+        picture.appendChild(caption)
+        div.appendChild(address)
+        div.appendChild(p)
+        div.appendChild(button)
+
+        placesContainer.appendChild(div)
+
+    });
+}
+
+displayPlaces(places)
+

@@ -136,6 +136,59 @@ nav.open{
 }
 
 
+.cards{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.cards div{
+    background-color: #cacbce;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.301) ;
+    border-radius: 5px;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photo"
+    "fcaption"
+    "address"
+    "description"
+    "button";
+}
+
+.cards div h2{
+    grid-area: name;
+}
+
+.cards div picture{
+    grid-area: photo;
+}
+
+.cards div figcaption{
+    grid-area: fcaption;
+} 
+
+.cards div address{
+    grid-area: address;
+}
+
+.cards div p{
+    text-align: left;
+    line-height: 25px;
+    grid-area: description;
+}
+
+.cards div button{
+    cursor: pointer;
+    font-size: 20px;
+    grid-area: button;
+}
+
 
 footer{
     padding: 30px;
@@ -163,4 +216,17 @@ footer img{
     align-items: center;
     align-content: center;
     justify-items: center;
+}
+
+@media only screen and (min-width: 550px){
+
+    .cards div{
+        grid-template-areas: 
+        "photo" "name" 
+        "photo" "fcaption" 
+        "photo" "address"
+        "photo" "description"
+        "photo" "button";
+    }
+
 }
