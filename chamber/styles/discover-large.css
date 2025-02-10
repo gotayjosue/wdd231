@@ -31,6 +31,15 @@
     }
 
     .cards{
-        padding: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    }
+
+    .cards div{
+        grid-template-areas: 
+        "photo" "name" 
+        "photo" "fcaption" 
+        "photo" "address"
+        "photo" "description"
+        "photo" "button";
     }
 }

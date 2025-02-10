@@ -137,9 +137,10 @@ nav.open{
 
 
 .cards{
+    padding: 20px;
     margin-top: 60px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: 1fr;
     grid-gap: 20px;
     justify-items: center;
 }
@@ -152,6 +153,7 @@ nav.open{
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.301) ;
     border-radius: 5px;
     display: grid;
+    grid-column-gap: 20px;
     grid-template-areas: 
     "name"
     "photo"
@@ -187,6 +189,8 @@ nav.open{
     cursor: pointer;
     font-size: 20px;
     grid-area: button;
+    justify-self: center;
+    max-height: 30px;
 }
 
 
@@ -218,15 +222,18 @@ footer img{
     justify-items: center;
 }
 
-@media only screen and (min-width: 550px){
+@media screen and (min-width: 550px){
 
+    .cards div picture{
+        align-self: center;
+    }
     .cards div{
         grid-template-areas: 
-        "photo" "name" 
-        "photo" "fcaption" 
-        "photo" "address"
-        "photo" "description"
-        "photo" "button";
+        "photo name" 
+        "photo fcaption" 
+        "photo address"
+        "photo description"
+        "photo button";
     }
 
 }
