@@ -30,7 +30,6 @@ modeButton.addEventListener('click', () =>{
 const placesContainer = document.querySelector('.cards')
 
 import { places } from "../data/places.mjs";
-console.log(places)
 
 function displayPlaces(places){
 
