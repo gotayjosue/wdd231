@@ -173,6 +173,7 @@ nav.open{
 
 .cards div figcaption{
     grid-area: fcaption;
+    font-style: italic;
 } 
 
 .cards div address{
