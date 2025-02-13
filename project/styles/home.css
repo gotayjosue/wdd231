@@ -15,10 +15,14 @@ body{
 }
 
 header{
-    display: flex;
     display: grid;
+    grid-gap: 20px;
     align-items: center;
     background-color: var(--secondary-color);
+}
+
+.desktop-only{
+    display: none;
 }
 
 nav{
@@ -38,6 +42,11 @@ nav a{
     text-decoration: none;
     line-height: 40px;
     color: black;
+    font-size: 20px;
+}
+
+nav a:hover{
+    text-decoration: underline;
 }
 
 
