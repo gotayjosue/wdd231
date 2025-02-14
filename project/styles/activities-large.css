@@ -51,41 +51,4 @@
         margin: auto;
     }
 
-    .links{
-        display: grid;
-        grid-gap: 30px;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: -50px;
-        padding: 0px 20px 0px 20px;
-    }
-
-    .links div{
-        background-color: #cce3de2f;
-        max-width: 300px;
-    }
-
-    .directory{
-        transform: translateY(-20px);
-    }
-
-    .group{
-        transform: translateY(-20px);
-    }
-
-    .data{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: 150px;
-    }
-
-    .weather{
-        justify-self: center;
-        justify-items: center;
-        margin-right: 40px;
-    }
-
-
-    .spotlight{
-        margin-right: 30px;
-    }
 }

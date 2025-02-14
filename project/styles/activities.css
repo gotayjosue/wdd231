@@ -1,7 +1,7 @@
 :root{
-   --primary-color: #6b9080;
-   --secondary-color: #cce3de;
-   --accent2: #ffffff;
+    --primary-color: #6b9080;
+    --secondary-color: #cce3de;
+    --accent2: #ffffff;
 }
 
 body{
@@ -75,9 +75,9 @@ nav.open{
 
 #menuButton::before{
     content: "\2630";
-  }
+}
 
-  #menuButton.open::before{
+#menuButton.open::before{
     content: "x";
 }
 
@@ -95,15 +95,19 @@ header h2{
     animation: slideUp 1s ease-out;
 }
 
-.links{
-    margin-top: 50px;
+.calendar{
+    display: grid;
+    grid-gap: 30px;
+    margin-top: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
 }
 
-.links div{
-    margin-top: 30px;
+.calendar div{
+    text-align: center;
     padding: 20px;
+    width: 100%;
     max-width: 300px;
-    justify-self: center;
     border: 1px solid black;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     animation: slideUp 1s ease-out;
@@ -123,59 +127,10 @@ header h2{
     }
 }
 
-.links div p{
-    text-align: left;
-    line-height: 26px;
-}
-
-.directory{
-    text-align: center;
-}
-
-.calendar{
-    text-align: center;
-}
-
-.group{
-    text-align: center;
-}
-
-.directory img{
+.calendar div img{
     width: 100%;
     max-width: 100px;
-}
-
-.calendar img{
-    width: 100%;
-    max-width: 100px;
-}
-
-.group img{
-    width: 100%;
-    max-width: 100px;
-}
-
-.weather{
     justify-self: center;
-    margin-top: 30px;
-    text-align: center;
-    border: 1px solid black;
-    width: 100%;
-    max-width: 300px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    animation: slideUp 1s ease-out;
-}
-
-.spotlight{
-    justify-self: center;
-    width: 90%;
-    max-width: 600px;
-    height: auto;
-    text-align: center;
-    margin-top: 30px;
-    border: 1px solid black;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    animation: slideUp 1s ease-out;
 }
 
 footer{
@@ -188,8 +143,8 @@ footer{
 }
 
 footer img{
-    width: 100%;
-    max-width: 30px;
+width: 100%;
+max-width: 30px;
 }
 
 .social{
@@ -198,12 +153,4 @@ footer img{
     grid-column: 2;
     justify-self: end;
     grid-gap: 30px;
-}
-
-@media screen and (min-width: 550px){
-
-    .links div{
-        max-width: 600px;
-    }
-
 }

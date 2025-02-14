@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Trujillo Ward</title>
+    <title>Activities | Trujillo Ward</title>
     <meta property="og:title" content="Trujillo Ward Website">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://res.cloudinary.com/dhu9pmzqp/image/upload/v1737349423/hero-image-medium_eguvqf.webp">
@@ -15,17 +15,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="icon" href="images/favicon3.ico">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/home-large.css">
-    <script src="scripts/home.js" defer></script>
+    <link rel="stylesheet" href="styles/activities.css">
+    <link rel="stylesheet" href="styles/activities-large.css">
+    <script src="scripts/activities.js" type="module" defer></script>
 </head>
 <body>
     <header>
         <img class="logo" src="images/trujillo_logo.png" alt="Trujillo Ward Logo">
 
         <nav id="navigation">
-            <a class="current-element" href="index.html">Home</a>
-            <a href="activities.html">Activities</a>
+            <a href="index.html">Home</a>
+            <a class="current-element" href="activities.html">Activities</a>
             <a href="#">Directory</a>
             <a href="#">Contact Us</a>
         </nav>
@@ -41,37 +41,7 @@
     </header>
 
     <main>
-        <div class="links">
-            <div class="directory">
-                <img src="images/location.webp" alt="Location icon">
-                <h3>Ward Directory</h3>
-                <p>Get to know the leaders of our church organizations and their roles. The Ward Directory provides information 
-                    about each organization’s purpose and how they serve our congregation</p>
-            </div>
-            <div class="calendar">
-                <img src="images/calendar.webp" alt="Calendar icon">
-                <h3>Activities Calendar</h3>
-                <p>Stay informed about upcoming church events, meetings, and activities. The Activities 
-                    Calendar helps you plan and participate in spiritual and community gatherings</p>
-            </div>
-            <div class="group">
-                <img src="images/group.webp" alt="Group icon">
-                <h3>Get to Know Us</h3>
-                <p>Learn more about our church, our mission, and our beliefs. Get to know the 
-                    people who serve and how you can become part of our faith community</p>
-            </div>
-        </div>
-
-        <div class="data">
-            <div class="weather">
-                <h3>Current Weather</h3>
-            </div>
-
-            <div class="spotlight">
-                <h3>Activities spotlight</h3>
-
-            </div>
-        </div>
+        <div class="calendar"></div>
     </main>
 
     <footer>
