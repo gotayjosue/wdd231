@@ -79,57 +79,43 @@ function reset(){
     activityContainer.innerHTML = ''
 }
 
-/* filter by month Function */
+/* filter by month and by organization function */
 
 function filterActivities(activities) {
-    const filter = document.querySelector("#month").value;
+    const actfilter = document.querySelector("#month").value;
+    const orgfilter = document.querySelector('#org').value
     reset()
 
-    let filteredActivities = []
+    let filteredActivities = activities
 
-    if (filter === "all"){
-        filteredActivities = activities;
-    } else{
-        filteredActivities = activities.filter(activity => {
+    if (actfilter !== "all"){
+        filteredActivities = filteredActivities.filter(activity => {
             const month = activity.date.split('-')[1];
-            return month === filter;
+            return month === actfilter;
         });
     }
 
-    displayActivities(filteredActivities);
-    console.log(filteredActivities)
-}
+    if (orgfilter !==  "all"){
+        filteredActivities = filteredActivities.filter(activity => {
+            return activity.org === orgfilter;
+        });
 
-
-
-document.querySelector('#month').addEventListener('change', () =>{
-    filterActivities(activities)
-})
-
-// Filter by organization function
-
-function filterOrganization(organizations){
-    const filter = document.querySelector('#org').value
-    activityContainer.innerHTML = ''
-
-    let filteredOrganizations = []
-
-    switch (filter) {
-        case 'kids': case 'women': case 'men' : case 'youngMen' : case 'youngGirls': 
-        case 'forAll':
-            filteredOrganizations = organizations.filter(organization => organization.org === filter)
-            break;
-        
-        default:
-            filteredOrganizations = organizations
-            break;
     }
 
-    displayActivities(filteredOrganizations)
+    displayActivities(filteredActivities);
+
 }
 
-document.querySelector('#org').addEventListener('change', () =>{
-    filterOrganization(activities)
-})
+
+
+    document.querySelector('#month').addEventListener('change', () =>{
+        filterActivities(activities);
+        });
+
+    document.querySelector('#org').addEventListener('change', () =>{
+        filterActivities(activities)
+});
+
+
 
 
