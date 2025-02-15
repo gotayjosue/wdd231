@@ -107,7 +107,6 @@ function filterActivities(activities) {
 }
 
 
-
     document.querySelector('#month').addEventListener('change', () =>{
         filterActivities(activities);
         });
