@@ -73,3 +73,63 @@ function displayActivities(activities){
 }
 
 displayActivities(activities)
+
+//Defining the reset function to clear the activity container to show the filtered content
+function reset(){
+    activityContainer.innerHTML = ''
+}
+
+/* filter by month Function */
+
+function filterActivities(activities) {
+    const filter = document.querySelector("#month").value;
+    reset()
+
+    let filteredActivities = []
+
+    if (filter === "all"){
+        filteredActivities = activities;
+    } else{
+        filteredActivities = activities.filter(activity => {
+            const month = activity.date.split('-')[1];
+            return month === filter;
+        });
+    }
+
+    displayActivities(filteredActivities);
+    console.log(filteredActivities)
+}
+
+
+
+document.querySelector('#month').addEventListener('change', () =>{
+    filterActivities(activities)
+})
+
+// Filter by organization function
+
+function filterOrganization(organizations){
+    const filter = document.querySelector('#org').value
+    activityContainer.innerHTML = ''
+
+    let filteredOrganizations = []
+
+    switch (filter) {
+        case 'kids': case 'women': case 'men' : case 'youngMen' : case 'youngGirls': 
+        case 'forAll':
+            filteredOrganizations = organizations.filter(organization => organization.org === filter)
+            break;
+        
+        default:
+            filteredOrganizations = organizations
+            break;
+    }
+
+    displayActivities(filteredOrganizations)
+}
+
+document.querySelector('#org').addEventListener('change', () =>{
+    filterOrganization(activities)
+})
+
+

@@ -5,6 +5,7 @@ export const activities = [
         "location": "Chapel",
         "responsible": "Marcos Marcia",
         "time": "6 PM",
+        "org": "men",
         "completed": false
     },
     {
@@ -13,6 +14,7 @@ export const activities = [
         "location": "Chapel",
         "responsible": "Emeli Caballero",
         "time": "5 PM",
+        "org": "kids",
         "completed": true
     },
     {
@@ -21,6 +23,7 @@ export const activities = [
         "location": "Chapel",
         "responsible": "Ángela Ballesteros",
         "time": "5 PM",
+        "org": "women",
         "completed": false
     },
     {
@@ -29,6 +32,7 @@ export const activities = [
         "location": "Lagoon? Cayamut?",
         "responsible": "Juan Aréz",
         "time": "7 AM",
+        "org": "men",
         "completed": false
     },
     {
@@ -37,14 +41,16 @@ export const activities = [
         "location": "Chapel",
         "responsible": "Josué Gotay / Bishopric",
         "time": "6 PM",
+        "org": "men",
         "completed": false
     },
     {
         "activity": "Where Are the Firefighters?",
         "date": "2024-04-12",
         "location": "Capiro?",
-        "responsible": "",
+        "responsible": "Andres Thomas",
         "time": "3 PM",
+        "org": "youngMen",
         "completed": false
     },
     {
@@ -53,14 +59,16 @@ export const activities = [
         "location": "Chapel",
         "responsible": "Guadalupe Ortiz",
         "time": "3 PM",
+        "org": "kids",
         "completed": false
     },
     {
         "activity": "Visit to Hot Springs",
         "date": "2024-05-10",
         "location": "Silín",
-        "responsible": "Arnol Rodríguez",
+        "responsible": "Angel Rodríguez",
         "time": "9 AM",
+        "org": "men",
         "completed": false
     },
     {
@@ -69,6 +77,7 @@ export const activities = [
         "location": "Chapel",
         "responsible": "The Missionaries / Bishopric",
         "time": "3 PM",
+        "org": "men",
         "completed": false
     },
     {
@@ -77,6 +86,7 @@ export const activities = [
         "location": "Chapel",
         "responsible": "Emeli Caballero",
         "time": "3 PM",
+        "org": "kids",
         "completed": false
     },
     {
@@ -85,6 +95,7 @@ export const activities = [
         "location": "Chapel",
         "responsible": "Bishopric",
         "time": "5 PM",
+        "org": "youngMen",
         "completed": false
     },
     {
@@ -93,6 +104,7 @@ export const activities = [
         "location": "Chapel",
         "responsible": "Bishopric",
         "time": "5 PM",
+        "org": "men",
         "completed": false
     },
     {
@@ -101,6 +113,7 @@ export const activities = [
         "location": "Chapel",
         "responsible": "Relief Society",
         "time": "5 PM",
+        "org": "women",
         "completed": false
     },
     {
@@ -109,6 +122,7 @@ export const activities = [
         "location": "Chapel",
         "responsible": "Ethel Álvarez / Josua López / Bishopric",
         "time": "5 PM",
+        "org": "men",
         "completed": false
     },
     {
@@ -117,6 +131,7 @@ export const activities = [
         "location": "Chapel",
         "responsible": "Juan Arzú",
         "time": "6 PM",
+        "org": "men",
         "completed": false
     },
     {
@@ -125,6 +140,7 @@ export const activities = [
         "location": "Chapel",
         "responsible": "All Organizers",
         "time": "5 PM",
+        "org": "forAll",
         "completed": false
     },
     {
@@ -133,6 +149,7 @@ export const activities = [
         "location": "Chapel",
         "responsible": "All Organizers / SOC SOC",
         "time": "5 PM",
+        "org": "forAll",
         "completed": false
     }
 ]

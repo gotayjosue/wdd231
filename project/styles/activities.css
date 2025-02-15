@@ -154,3 +154,11 @@ max-width: 30px;
     justify-self: end;
     grid-gap: 30px;
 }
+
+@media screen and (min-width: 550px){
+    
+    .hero{
+        height: auto;
+    }
+
+}
