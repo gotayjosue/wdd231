@@ -42,7 +42,7 @@ function displayActivities(activities){
         date.innerHTML = `<strong>Date:</strong> ${activity.date}`
         time.innerHTML = `<strong>Time:</strong> ${activity.time}`
         reponsible.innerHTML = `<strong>Responsible:</strong> ${activity.responsible}`
-        img.src = 'images/activities.png'
+        img.src = 'images/activities.webp'
         img.alt = 'Activity Icon'
 
         div.appendChild(img)
