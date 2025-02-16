@@ -167,16 +167,40 @@ header h2{
 }
 
 .spotlight{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    justify-content: center;
     justify-self: center;
     width: 90%;
     max-width: 600px;
-    height: auto;
     text-align: center;
     margin-top: 30px;
     border: 1px solid black;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     animation: slideUp 1s ease-out;
+    align-items: center;
 }
+
+.spotlight h3{
+    font-size: 25px;
+}
+
+.spotlight img{
+    width: 100%;
+    max-width: 100px;
+    margin-top: 30px;
+}
+
+.spotlight div{
+    width: 100%;
+}
+
+
+.spotlight div h3{
+    font-size: 15px;
+}
+
 
 footer{
     margin-top: 50px;

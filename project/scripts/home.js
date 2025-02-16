@@ -63,3 +63,74 @@ function displayResults(data){
     description.textContent = capitalize(data.weather[0].description)
     weatherContainer.appendChild(description)
 };
+//Activities spotlight function
+const currentMonth = new Date().getMonth() + 1 //This way months start in 1 insted of 0
+const spotlighContainer = document.querySelector('.spotlight')
+
+import { activities } from "../data/activities.mjs"
+
+function displaySpotlight(activities){
+
+    const filteredMembers = activities.filter(activity => parseInt(activity.date.split('-')[1]) >= currentMonth 
+    && parseInt(activity.date.split('-')[1]) <= currentMonth + 3)
+
+    const selectedRandom = selected(filteredMembers, 3)
+
+    selectedRandom.forEach(activity => {
+
+        function monthNames(monthNumber){
+            const monthsOfYear = [
+                'January', 'February', 'March', 'April', 'May', 'June', 'July', 
+                'August', 'September', 'October', 'November', 'December'
+              ];
+            return monthsOfYear[monthNumber - 1]
+        }
+
+        const activityYear = activity.date.split('-')[0]
+        const activityMonth = parseInt(activity.date.split('-')[1])
+        const activityDay = activity.date.split('-')[2]
+
+        const div = document.createElement('div')
+        const img = document.createElement('img')
+        const h4 = document.createElement('h4')
+        const date = document.createElement('p')
+        const time = document.createElement('p')
+        const status = document.createElement('p')
+
+        img.src = "images/spotlight.webp"
+        img.alt = "Spotlight Icon"
+        img.loading = 'lazy'
+        
+
+        h4.textContent = activity.activity
+        date.textContent = `${activityDay} ${monthNames(activityMonth)} ${activityYear}`
+        time.textContent = activity.time
+        if (activity.completed === false){
+            status.innerHTML = `<strong>Status:</strong> Pending`
+        }else{
+            status.innerHTML = `<strong>Status:</strong> Completed`
+        }
+
+        div.appendChild(img)
+        div.appendChild(h4)
+        div.appendChild(date)
+        div.appendChild(time)
+        div.appendChild(status)
+
+        spotlighContainer.appendChild(div)
+
+    });
+}
+
+displaySpotlight(activities)
+
+
+function selected (members, n){
+    const result = []
+    const copy = [...members]
+    while (result.length < n && copy.length > 0){
+        const ramdomSelection = Math.floor(Math.random() * copy.length);
+        result.push(copy.splice(ramdomSelection, 1)[0]);
+    }
+    return result;
+}

@@ -1,7 +1,7 @@
 export const activities = [
     {
         "activity": "Movie Night",
-        "date": "2024-02-22",
+        "date": "2025-02-22",
         "location": "Chapel",
         "responsible": "Marcos Marcia",
         "time": "6 PM",
@@ -10,7 +10,7 @@ export const activities = [
     },
     {
         "activity": "Friendship Celebration (2nd year)",
-        "date": "2024-02-12",
+        "date": "2025-02-12",
         "location": "Chapel",
         "responsible": "Emeli Caballero",
         "time": "5 PM",
@@ -19,7 +19,7 @@ export const activities = [
     },
     {
         "activity": "Citywide Celebration",
-        "date": "2024-03-15",
+        "date": "2025-03-15",
         "location": "Chapel",
         "responsible": "Ángela Ballesteros",
         "time": "5 PM",
@@ -28,7 +28,7 @@ export const activities = [
     },
     {
         "activity": "Easter Activity",
-        "date": "2024-03-29",
+        "date": "2025-03-29",
         "location": "Lagoon? Cayamut?",
         "responsible": "Juan Aréz",
         "time": "7 AM",
@@ -37,7 +37,7 @@ export const activities = [
     },
     {
         "activity": "Talent Night",
-        "date": "2024-04-12",
+        "date": "2025-04-12",
         "location": "Chapel",
         "responsible": "Josué Gotay / Bishopric",
         "time": "6 PM",
@@ -46,7 +46,7 @@ export const activities = [
     },
     {
         "activity": "Where Are the Firefighters?",
-        "date": "2024-04-12",
+        "date": "2025-04-12",
         "location": "Capiro?",
         "responsible": "Andres Thomas",
         "time": "3 PM",
@@ -55,7 +55,7 @@ export const activities = [
     },
     {
         "activity": "Mother’s Day Celebration",
-        "date": "2024-05-10",
+        "date": "2025-05-10",
         "location": "Chapel",
         "responsible": "Guadalupe Ortiz",
         "time": "3 PM",
@@ -64,7 +64,7 @@ export const activities = [
     },
     {
         "activity": "Visit to Hot Springs",
-        "date": "2024-05-10",
+        "date": "2025-05-10",
         "location": "Silín",
         "responsible": "Angel Rodríguez",
         "time": "9 AM",
@@ -73,7 +73,7 @@ export const activities = [
     },
     {
         "activity": "Home Night",
-        "date": "2024-06-16",
+        "date": "2025-06-16",
         "location": "Chapel",
         "responsible": "The Missionaries / Bishopric",
         "time": "3 PM",
@@ -82,7 +82,7 @@ export const activities = [
     },
     {
         "activity": "Volleyball Game + Scripture Game",
-        "date": "2024-06-22",
+        "date": "2025-06-22",
         "location": "Chapel",
         "responsible": "Emeli Caballero",
         "time": "3 PM",
@@ -91,7 +91,7 @@ export const activities = [
     },
     {
         "activity": "Soccer Afternoon + 7s",
-        "date": "2024-07-05",
+        "date": "2025-07-05",
         "location": "Chapel",
         "responsible": "Bishopric",
         "time": "5 PM",
@@ -100,7 +100,7 @@ export const activities = [
     },
     {
         "activity": "3v3 Basketball Game",
-        "date": "2024-07-12",
+        "date": "2025-07-12",
         "location": "Chapel",
         "responsible": "Bishopric",
         "time": "5 PM",
@@ -109,7 +109,7 @@ export const activities = [
     },
     {
         "activity": "Family Dinner",
-        "date": "2024-08-15",
+        "date": "2025-08-15",
         "location": "Chapel",
         "responsible": "Relief Society",
         "time": "5 PM",
@@ -118,7 +118,7 @@ export const activities = [
     },
     {
         "activity": "Traditional Food & History",
-        "date": "2024-09-10",
+        "date": "2025-09-10",
         "location": "Chapel",
         "responsible": "Ethel Álvarez / Josua López / Bishopric",
         "time": "5 PM",
@@ -127,7 +127,7 @@ export const activities = [
     },
     {
         "activity": "Theater Night",
-        "date": "2024-10-01",
+        "date": "2025-10-01",
         "location": "Chapel",
         "responsible": "Juan Arzú",
         "time": "6 PM",
@@ -136,7 +136,7 @@ export const activities = [
     },
     {
         "activity": "Plows & Parrots Presentation",
-        "date": "2024-11-30",
+        "date": "2025-11-30",
         "location": "Chapel",
         "responsible": "All Organizers",
         "time": "5 PM",
@@ -145,7 +145,7 @@ export const activities = [
     },
     {
         "activity": "Christmas Crafts Decoration & Contest",
-        "date": "2024-12-10",
+        "date": "2025-12-10",
         "location": "Chapel",
         "responsible": "All Organizers / SOC SOC",
         "time": "5 PM",

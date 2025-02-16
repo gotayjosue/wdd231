@@ -30,6 +30,18 @@ import { activities } from "../data/activities.mjs"
 
 function displayActivities(activities){
     activities.forEach( activity => {
+
+        function monthNames(monthNumber){
+            const monthsOfYear = [
+                'January', 'February', 'March', 'April', 'May', 'June', 'July', 
+                'August', 'September', 'October', 'November', 'December'
+              ];
+            return monthsOfYear[monthNumber - 1]
+        }
+
+        const activityMonth = parseInt(activity.date.split('-')[1])
+        const activityDay = activity.date.split('-')[2]
+        const activityYear = activity.date.split('-')[0]
         
         const div = document.createElement('div')
         const h3 = document.createElement('h3')
@@ -39,7 +51,7 @@ function displayActivities(activities){
         const img = document.createElement('img')
 
         h3.textContent = activity.activity
-        date.innerHTML = `<strong>Date:</strong> ${activity.date}`
+        date.innerHTML = `<strong>Date:</strong> ${activityDay} ${monthNames(activityMonth)} ${activityYear}`
         time.innerHTML = `<strong>Time:</strong> ${activity.time}`
         reponsible.innerHTML = `<strong>Responsible:</strong> ${activity.responsible}`
         img.src = 'images/activities.webp'
