@@ -126,6 +126,43 @@ header h2{
     font-size: 18px;
 }
 
+dialog{
+    border: none;
+    line-height: 28px;
+    width: 80%;
+    max-width: 600px;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+dialog p{
+    text-align: left;
+    padding: 15px;
+}
+
+dialog ul{
+    text-align: left;
+}
+
+dialog button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background: none;
+    padding: 10px;
+}
+
+@keyframes fadeIn{
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
 @keyframes slideUp{
 
     0%{
