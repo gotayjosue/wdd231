@@ -7,16 +7,20 @@ export const activities = [
         "responsible": "Marcos Marcia",
         "time": "6 PM",
         "org": "men",
+        "photos": [],
         "completed": false
     },
     {
         "id": 2,
-        "activity": "Friendship Celebration (2nd year)",
-        "date": "2025-02-12",
+        "activity": "Valentin's Day Celebration",
+        "date": "2025-02-15",
         "location": "Chapel",
         "responsible": "Emeli Caballero",
         "time": "5 PM",
         "org": "kids",
+        "photos": ["https://res.cloudinary.com/dhu9pmzqp/image/upload/v1739806541/kidsActivity_qja3am.webp", "https://res.cloudinary.com/dhu9pmzqp/image/upload/v1739806541/kidsActivity3_vy3mgq.webp",
+            "https://res.cloudinary.com/dhu9pmzqp/image/upload/v1739806541/kidsActivity2_blhs40.webp", "https://res.cloudinary.com/dhu9pmzqp/image/upload/v1739806541/kidsActivity1_qwmt2h.webp"
+        ],
         "completed": true
     },
     {
@@ -27,6 +31,7 @@ export const activities = [
         "responsible": "Ángela Ballesteros",
         "time": "5 PM",
         "org": "women",
+        "photos": [],
         "completed": false
     },
     {
@@ -37,6 +42,7 @@ export const activities = [
         "responsible": "Juan Aréz",
         "time": "7 AM",
         "org": "men",
+        "photos": [],
         "completed": false
     },
     {
@@ -47,6 +53,7 @@ export const activities = [
         "responsible": "Josué Gotay / Bishopric",
         "time": "6 PM",
         "org": "men",
+        "photos": [],
         "completed": false
     },
     {
@@ -57,6 +64,7 @@ export const activities = [
         "responsible": "Andres Thomas",
         "time": "3 PM",
         "org": "youngMen",
+        "photos": [],
         "completed": false
     },
     {
@@ -67,6 +75,7 @@ export const activities = [
         "responsible": "Guadalupe Ortiz",
         "time": "3 PM",
         "org": "kids",
+        "photos": [],
         "completed": false
     },
     {
@@ -77,6 +86,7 @@ export const activities = [
         "responsible": "Angel Rodríguez",
         "time": "9 AM",
         "org": "men",
+        "photos": [],
         "completed": false
     },
     {
@@ -87,6 +97,7 @@ export const activities = [
         "responsible": "The Missionaries / Bishopric",
         "time": "3 PM",
         "org": "men",
+        "photos": [],
         "completed": false
     },
     {
@@ -97,6 +108,7 @@ export const activities = [
         "responsible": "Emeli Caballero",
         "time": "3 PM",
         "org": "kids",
+        "photos": [],
         "completed": false
     },
     {
@@ -107,6 +119,7 @@ export const activities = [
         "responsible": "Bishopric",
         "time": "5 PM",
         "org": "youngMen",
+        "photos": [],
         "completed": false
     },
     {
@@ -117,6 +130,7 @@ export const activities = [
         "responsible": "Bishopric",
         "time": "5 PM",
         "org": "men",
+        "photos": [],
         "completed": false
     },
     {
@@ -127,6 +141,7 @@ export const activities = [
         "responsible": "Relief Society",
         "time": "5 PM",
         "org": "women",
+        "photos": [],
         "completed": false
     },
     {
@@ -137,6 +152,7 @@ export const activities = [
         "responsible": "Ethel Álvarez / Josua López / Bishopric",
         "time": "5 PM",
         "org": "men",
+        "photos": [],
         "completed": false
     },
     {
@@ -147,6 +163,7 @@ export const activities = [
         "responsible": "Juan Arzú",
         "time": "6 PM",
         "org": "men",
+        "photos": [],
         "completed": false
     },
     {
@@ -157,6 +174,7 @@ export const activities = [
         "responsible": "All Organizers",
         "time": "5 PM",
         "org": "forAll",
+        "photos": [],
         "completed": false
     },
     {
@@ -167,6 +185,7 @@ export const activities = [
         "responsible": "All Organizers / SOC SOC",
         "time": "5 PM",
         "org": "forAll",
+        "photos": [],
         "completed": false
     }
 ]

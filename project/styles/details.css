@@ -98,12 +98,18 @@ main{
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr;
+    padding: 20px;
 }
 
 .gallery img{
     width: 100%;
     object-fit: cover;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.363);
+}
+
+.message{
+    width: 100%;
+    text-align: center;
 }
 
 footer{

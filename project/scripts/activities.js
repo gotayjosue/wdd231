@@ -67,6 +67,15 @@ function displayActivities(activities){
         activityContainer.appendChild(div)
 
         div.style.cursor = "pointer"
+        //Adding the click event to the activity container. Every it is clicked it leads to the details page
+        div.addEventListener('click', () => {
+            window.location.href = "details.html"
+        })
+        //Sending data to the local storage in form of json the details page. This data will be retrieved later.
+        div.addEventListener('click', () =>{
+            localStorage.setItem('selectedActivity', JSON.stringify(activity))
+            window.location.href = "details.html"
+        });
 
         if(activity.completed === true){
 
@@ -79,14 +88,6 @@ function displayActivities(activities){
             advice.textContent = "Completed✅"
             div.appendChild(advice)
         }
-
-        div.addEventListener('click', () => {
-            window.location.href = "details.html"
-        })
-        div.addEventListener('click', () =>{
-            localStorage.setItem('selectedActivity', JSON.stringify(activity))
-            window.location.href = "details.html"
-        });
 
     });
 }

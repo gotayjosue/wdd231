@@ -23,12 +23,15 @@ window.addEventListener('resize', () => {
 });
 
 const detailsContainer = document.querySelector('.activityDetails')
+const photoGallery = document.querySelector('.gallery')
 
 
 document.addEventListener('DOMContentLoaded', () =>{
+
     const selectedActivity = JSON.parse(localStorage.getItem('selectedActivity')); /*This line here retrieve the data of the photo the user clicked on the home page*/
   
     if (selectedActivity){
+
         function monthNames(monthNumber){
             const monthsOfYear = [
                 'January', 'February', 'March', 'April', 'May', 'June', 'July', 
@@ -36,6 +39,9 @@ document.addEventListener('DOMContentLoaded', () =>{
               ];
             return monthsOfYear[monthNumber - 1]
         }
+
+        const photos = selectedActivity.photos // This is the "photos" array in the json file
+        const message = document.querySelector('.message') // If there are no photos this message will appear
         const activityMonth = parseInt(selectedActivity.date.split('-')[1])
         const activityDay = selectedActivity.date.split('-')[2]
         const activityYear = selectedActivity.date.split('-')[0]
@@ -79,6 +85,25 @@ document.addEventListener('DOMContentLoaded', () =>{
         if(selectedActivity.org === 'forAll'){
             organization.innerHTML = `<strong>Organization:</strong> For all members`
         }
+
+        //Conditions for showing photos: If the photo array is empty it will show a message, if it's not it will show the photos
+        photos.forEach(photo => {
+            
+            if (photo === ''){
+                message.style.display = 'block'
+            }else{
+                message.style.display = 'none'
+
+                const img = document.createElement('img')
+
+                img.src = photo
+                img.loading = 'lazy'
+
+                photoGallery.appendChild(img)
+            }
+        });
+
+        console.log(selectedActivity.photos)
 
         detailsContainer.appendChild(p1)
         detailsContainer.appendChild(p2)

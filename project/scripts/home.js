@@ -100,6 +100,7 @@ function displaySpotlight(activities){
         img.src = "images/spotlight.webp"
         img.alt = "Spotlight Icon"
         img.loading = 'lazy'
+        div.style.cursor = 'pointer'
         
 
         h4.textContent = activity.activity
@@ -110,6 +111,15 @@ function displaySpotlight(activities){
         }else{
             status.innerHTML = `<strong>Status:</strong> Completed`
         }
+
+        div.addEventListener('click', () =>{
+            window.location.href = 'details.html'
+        })
+
+        div.addEventListener('click', () =>{
+            localStorage.setItem('selectedActivity', JSON.stringify(activity))
+            window.location.href = 'details.html'
+        })
 
         div.appendChild(img)
         div.appendChild(h4)
