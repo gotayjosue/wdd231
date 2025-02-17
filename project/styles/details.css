@@ -6,7 +6,11 @@
 
 body{
     font-family: Roboto, Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
 
 .logo{
     width: 100%;
@@ -81,8 +85,25 @@ nav.open{
     content: "x";
 }
 
+main{
+    flex: 1;
+}
+
 .activityDetails{
     padding: 20px;
+}
+
+.gallery{
+    margin-top: 150px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+.gallery img{
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.363);
 }
 
 footer{
