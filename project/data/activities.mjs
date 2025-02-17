@@ -82,7 +82,7 @@ export const activities = [
         "id": 8,
         "activity": "Visit to Hot Springs",
         "date": "2025-05-10",
-        "location": "Silín",
+        "location": "Jerico Ward, Trujillo",
         "responsible": "Angel Rodríguez",
         "time": "9 AM",
         "org": "men",
