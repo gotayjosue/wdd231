@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             p2.innerHTML = `<strong>Status: </strong>Completed`
         }
 
-        location.innerHTML = `<strong>Locacion: </strong>${selectedActivity.location}`
+        location.innerHTML = `<strong>Location: </strong>${selectedActivity.location}`
         date.innerHTML = `<strong>Date:</strong> ${activityDay} ${monthNames(activityMonth)} ${activityYear}`
         time.innerHTML = `<strong>Time:</strong> ${selectedActivity.time}`
         responsible.innerHTML = `<strong>Responsible:</strong> ${selectedActivity.responsible}`
