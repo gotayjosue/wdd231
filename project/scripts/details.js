@@ -14,9 +14,9 @@ menuButton.addEventListener('click', () =>{
     menuButton.classList.toggle('open')
 })
 
-
+//Everytime the page gets bigger the class 'open' will be take out of the navBar and the menuButton//
 window.addEventListener('resize', () => {
-    if (window.innerWidth >= 768) { //Everytime the page gets bigger the class 'open' will be take out of the navBar and the menuButton//
+    if (window.innerWidth >= 768) { 
         navBar.classList.remove('open');
         menuButton.classList.remove('open')
     }
