@@ -66,20 +66,27 @@ function displayActivities(activities){
 
         activityContainer.appendChild(div)
 
+        div.style.cursor = "pointer"
+
         if(activity.completed === true){
 
             div.style.background = "#6b9080"
             div.style.color = "white"
             img.style.filter = "invert(1)"
             div.style.border = "none"
-            div.style.cursor = "pointer"
-            div.addEventListener('click', () => {
-                window.location.href = "details.html"
-            })
+    
             const advice = document.createElement('p')
             advice.textContent = "Completed✅"
             div.appendChild(advice)
         }
+
+        div.addEventListener('click', () => {
+            window.location.href = "details.html"
+        })
+        div.addEventListener('click', () =>{
+            localStorage.setItem('selectedActivity', JSON.stringify(activity))
+            window.location.href = "details.html"
+        });
 
     });
 }

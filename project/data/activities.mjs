@@ -1,5 +1,6 @@
 export const activities = [
     {
+        "id": 1,
         "activity": "Movie Night",
         "date": "2025-02-22",
         "location": "Chapel",
@@ -9,6 +10,7 @@ export const activities = [
         "completed": false
     },
     {
+        "id": 2,
         "activity": "Friendship Celebration (2nd year)",
         "date": "2025-02-12",
         "location": "Chapel",
@@ -18,6 +20,7 @@ export const activities = [
         "completed": true
     },
     {
+        "id": 3,
         "activity": "Citywide Celebration",
         "date": "2025-03-15",
         "location": "Chapel",
@@ -27,6 +30,7 @@ export const activities = [
         "completed": false
     },
     {
+        "id": 4,
         "activity": "Easter Activity",
         "date": "2025-03-29",
         "location": "Lagoon? Cayamut?",
@@ -36,6 +40,7 @@ export const activities = [
         "completed": false
     },
     {
+        "id": 5,
         "activity": "Talent Night",
         "date": "2025-04-12",
         "location": "Chapel",
@@ -45,6 +50,7 @@ export const activities = [
         "completed": false
     },
     {
+        "id": 6,
         "activity": "Where Are the Firefighters?",
         "date": "2025-04-12",
         "location": "Capiro?",
@@ -54,6 +60,7 @@ export const activities = [
         "completed": false
     },
     {
+        "id": 7,
         "activity": "Mother’s Day Celebration",
         "date": "2025-05-10",
         "location": "Chapel",
@@ -63,6 +70,7 @@ export const activities = [
         "completed": false
     },
     {
+        "id": 8,
         "activity": "Visit to Hot Springs",
         "date": "2025-05-10",
         "location": "Silín",
@@ -72,6 +80,7 @@ export const activities = [
         "completed": false
     },
     {
+        "id": 9,
         "activity": "Home Night",
         "date": "2025-06-16",
         "location": "Chapel",
@@ -81,6 +90,7 @@ export const activities = [
         "completed": false
     },
     {
+        "id": 10,
         "activity": "Volleyball Game + Scripture Game",
         "date": "2025-06-22",
         "location": "Chapel",
@@ -90,6 +100,7 @@ export const activities = [
         "completed": false
     },
     {
+        "id": 11,
         "activity": "Soccer Afternoon + 7s",
         "date": "2025-07-05",
         "location": "Chapel",
@@ -99,6 +110,7 @@ export const activities = [
         "completed": false
     },
     {
+        "id": 12,
         "activity": "3v3 Basketball Game",
         "date": "2025-07-12",
         "location": "Chapel",
@@ -108,6 +120,7 @@ export const activities = [
         "completed": false
     },
     {
+        "id": 13,
         "activity": "Family Dinner",
         "date": "2025-08-15",
         "location": "Chapel",
@@ -117,6 +130,7 @@ export const activities = [
         "completed": false
     },
     {
+        "id": 14,
         "activity": "Traditional Food & History",
         "date": "2025-09-10",
         "location": "Chapel",
@@ -126,6 +140,7 @@ export const activities = [
         "completed": false
     },
     {
+        "id": 15,
         "activity": "Theater Night",
         "date": "2025-10-01",
         "location": "Chapel",
@@ -135,6 +150,7 @@ export const activities = [
         "completed": false
     },
     {
+        "id": 16,
         "activity": "Plows & Parrots Presentation",
         "date": "2025-11-30",
         "location": "Chapel",
@@ -144,6 +160,7 @@ export const activities = [
         "completed": false
     },
     {
+        "id": 17,
         "activity": "Christmas Crafts Decoration & Contest",
         "date": "2025-12-10",
         "location": "Chapel",
