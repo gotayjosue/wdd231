@@ -64,8 +64,29 @@ function displayResults(data){
     weatherContainer.appendChild(description)
 };
 //Activities spotlight function
-const currentMonth = new Date().getMonth() + 1 //This way months start in 1 insted of 0
+const currentMonth = new Date().getMonth() + 1 //This way months start in 1 instead of 0
 const spotlighContainer = document.querySelector('.spotlight')
+
+//Info containers options
+const calendarInfo = document.querySelector('.calendar')
+const directoryInfo = document.querySelector('.directory')
+const knowUsInfo = document.querySelector('.group')
+
+calendarInfo.style.cursor = 'pointer'
+directoryInfo.style.cursor = 'pointer'
+knowUsInfo.style.cursor = 'pointer'
+
+calendarInfo.addEventListener('click', () =>{
+    window.location.href = 'activities.html'
+})
+
+directoryInfo.addEventListener('click', () =>{
+    window.location.href = 'directory.html'
+})
+
+knowUsInfo.addEventListener('click', () =>{
+    window.location.href = 'contacUs.html'
+})
 
 import { activities } from "../data/activities.mjs"
 
