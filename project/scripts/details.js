@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             organization.innerHTML = `<strong>Organization:</strong> For all members`
         }
 
-        //Conditions for showing photos: If the photo array is empty it will show a message, if it's not it will show the photos
+        //Conditions for photo's array: If the photo array is empty it will show a message, if it's not it will show the photos
         photos.forEach(photo => {
             
             if (photo === ''){
@@ -102,8 +102,6 @@ document.addEventListener('DOMContentLoaded', () =>{
                 photoGallery.appendChild(img)
             }
         });
-
-        console.log(selectedActivity.photos)
 
         detailsContainer.appendChild(p1)
         detailsContainer.appendChild(p2)
