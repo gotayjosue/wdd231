@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="icon" href="images/favicon3.ico">
-    <link rel="stylesheet" href="styles/contacUs.css">
+    <link rel="stylesheet" href="styles/contactUs.css">
     <link rel="stylesheet" href="styles/contactUs-large.css">
     <script src="scripts/contactUs.js" defer></script>
 </head>
@@ -33,6 +33,36 @@
     </header>
 
     <main>
+        <form class="f1" action="thanks.html" method="get">
+            <div class="imageContainer">
+                <img class="formLogo" src="images/trujillo_logo.png" alt="Ocaso logo">
+            </div>  
+            <p>Have questions or want to learn more about our ward? We'd love to hear from you! Fill out the form below, and we'll get in touch soon.</p>
+            <hr>
+            <label>First name*<input type="text" required name="first" title="Your first name" autocomplete="given-name"></label>
+            
+            <label>Last name*<input type="text" required name="last" title="Your last name" autocomplete="family-name"></label>
+
+            <label>Gender*
+                <select name="gender" id="gender" required>
+                    <option value="default" disabled selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            
+            <!-- <label>Organizational title*<input type="text" required name="organizational" title="Your organizational title. Please enter at least seven characters using only letters, hyphens, and spaces." autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"></label> -->
+            
+            <label>E-mail address*<input type="email" required name="email" title="Your email address" autocomplete="email" placeholder="example@gmail.com"></label>
+            
+            <label>Phone number*<input type="tel" required name="phone" title="Your phone number" autocomplete="tel" placeholder="907-155-9502"></label>
+            
+            <label>Comments<textarea name="comment" id="comment"></textarea></label>
+            
+            <input type="hidden" name="time" id="timestamp">
+            <div class="buttonContainer">
+                <button type="submit">Connect with the community</button>
+            </div>
+        </form>
     </main>
 
     <footer>
