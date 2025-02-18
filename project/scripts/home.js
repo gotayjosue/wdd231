@@ -85,7 +85,7 @@ directoryInfo.addEventListener('click', () =>{
 })
 
 knowUsInfo.addEventListener('click', () =>{
-    window.location.href = 'contacUs.html'
+    window.location.href = 'contactUs.html'
 })
 
 import { activities } from "../data/activities.mjs"
