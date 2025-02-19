@@ -12,7 +12,7 @@ export const activities = [
     },
     {
         "id": 2,
-        "activity": "Valentin's Day Celebration",
+        "activity": "Valentin's Day Craft",
         "date": "2025-02-15",
         "location": "Chapel",
         "responsible": "Emeli Caballero",
@@ -25,7 +25,7 @@ export const activities = [
     },
     {
         "id": 3,
-        "activity": "Citywide Celebration",
+        "activity": "Father's Day Celebration",
         "date": "2025-03-15",
         "location": "Chapel",
         "responsible": "Ángela Ballesteros",
@@ -36,10 +36,10 @@ export const activities = [
     },
     {
         "id": 4,
-        "activity": "Easter Activity",
+        "activity": "Fishing Activity",
         "date": "2025-03-29",
         "location": "Guaimoreto Lagoon",
-        "responsible": "Juan Aréz",
+        "responsible": "Juan Arzú",
         "time": "7 AM",
         "org": "men",
         "photos": [],
