@@ -113,7 +113,7 @@ export const activities = [
     },
     {
         "id": 11,
-        "activity": "Soccer Afternoon + 7s",
+        "activity": "Soccer Afternoon",
         "date": "2025-07-05",
         "location": "Chapel",
         "responsible": "Bishopric",
@@ -124,7 +124,7 @@ export const activities = [
     },
     {
         "id": 12,
-        "activity": "3v3 Basketball Game",
+        "activity": "Basketball Game",
         "date": "2025-07-12",
         "location": "Chapel",
         "responsible": "Bishopric",
@@ -168,7 +168,7 @@ export const activities = [
     },
     {
         "id": 16,
-        "activity": "Plows & Parrots Presentation",
+        "activity": "Grades of Glory Presentation",
         "date": "2025-11-30",
         "location": "Chapel",
         "responsible": "All Organizations",
@@ -179,7 +179,7 @@ export const activities = [
     },
     {
         "id": 17,
-        "activity": "Christmas Crafts Decoration & Contest",
+        "activity": "Christmas Dinner",
         "date": "2025-12-10",
         "location": "Chapel",
         "responsible": "Relief Society",
